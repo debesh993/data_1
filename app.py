@@ -4,10 +4,11 @@ import pandas as pd
 # Load Excel files
 @st.cache_data
 def load_data():
-    ndwi_data = pd.read_excel("ndwi.xlsx")
-    ndvi_data = pd.read_excel("ndvi.xlsx")
-    castor_seed_data = pd.read_excel("Castor seed.xlsx")
-    bajra_data = pd.read_excel("bajra.xlsx")
+    ndwi_data = pd.read_excel("https://docs.google.com/spreadsheets/d/1y6pBlXs8SIvWZD3bhNSKYz8ZNLvhZSa6/export?format=xlsx")
+    ndvi_data = pd.read_excel("https://docs.google.com/spreadsheets/d/1DwEz51UY7GJ2GL18OfYBQQXRV9daVeBT/export?format=xlsx")
+    castor_seed_data = pd.read_excel("https://docs.google.com/spreadsheets/d/1D_IQkrc53XWe0k9XCs9LsHqGnDFFO94h/export?format=xlsx")
+    bajra_data = pd.read_excel("https://docs.google.com/spreadsheets/d/1w57VzMQVvQVGFpwIkp5tQFdrV4ruUIC_/export?format=xlsx")
+
     return ndwi_data, ndvi_data, castor_seed_data, bajra_data
 
 ndwi_data, ndvi_data, castor_seed_data, bajra_data = load_data()
